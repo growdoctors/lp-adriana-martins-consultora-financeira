@@ -1,292 +1,109 @@
-// ============================================================
 // src/config/client.ts
-// PREENCHA ESTE ARQUIVO AO INICIAR UM NOVO PROJETO
-//
-// Todos os textos, dados e configurações do cliente ficam aqui.
-// Os componentes lêem deste arquivo — não edite os componentes
-// a não ser que seja necessária uma mudança estrutural.
-// ============================================================
-
 export const CLIENT = {
-  // ----------------------------------------------------------
-  // IDENTIDADE
-  // ----------------------------------------------------------
-  name: 'NOME DA CLÍNICA',
-  logo: '/images/logo.svg',
-  favicon: '/images/favicon.png',
-
-  // ----------------------------------------------------------
-  // SEO
-  // siteUrl: domínio final do site sem barra no final
-  // og.image: imagem de compartilhamento — idealmente 1200×630 px
-  // schema: dados estruturados para rich results no Google
-  // ----------------------------------------------------------
-  siteUrl: 'https://DOMINIO-DO-SITE.com.br',
-
+  name: "ADRIANA MARTINS - CONSULTORA FINANCEIRA",
+  logo: "https://f58ee20228d9ca2cf6ae548dbcf2204b.r2.cloudflarestorage.com/creative-post-storage/projects/prj_adriana-consultora/assets/logo-dark.png?X-Amz-Expires=3600&X-Amz-Date=20260430T182745Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=b934f0556c87eb9d9e2b56da7aeeed98%2F20260430%2Fauto%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=9694d940ef84e4e2143c411d4f5352080c41692367665bed2a66fc95af0b6f81",
+  favicon: "/images/favicon.png",
+  siteUrl: "https://lp-adriana-martins-consultora-financeira.pages.dev",
   seo: {
-    title: 'TÍTULO DA PÁGINA — NOME DA CLÍNICA',
-    description: 'DESCRIÇÃO CURTA DA PÁGINA (até 160 caracteres).',
+    title: "ADRIANA MARTINS - CONSULTORA FINANCEIRA - Lucro Previsível para Empresas",
+    description: "Consultoria financeira especializada para empreendedores, focada em transformar o caos financeiro em lucro previsível em até 90 dias com a Mentoria ACTUL.",
   },
-
-  og: {
-    image: '/images/og.jpg', // 1200×630 px
-  },
-
+  og: { image: "/images/og.jpg" },
   schema: {
-    type: 'Physician',
-    streetAddress: 'RUA, NÚMERO — BAIRRO',
-    addressLocality: 'CIDADE',
-    addressRegion: 'UF',
-    postalCode: '00000-000',
+    type: "Physician",
+    streetAddress: "",
+    addressLocality: "",
+    addressRegion: "",
+    postalCode: "",
     sameAs: [] as string[],
   },
-
-  // ----------------------------------------------------------
-  // FONTES (Google Fonts URL — ajustar por cliente)
-  // Padrão: Cormorant Garamond (display) + Montserrat (corpo)
-  // fontsUrl: URL completa do Google Fonts
-  // fonts.display: nome exato da família de títulos
-  // fonts.body: nome exato da família de corpo de texto
-  // ----------------------------------------------------------
-  fontsUrl:
-    'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap',
+  fontsUrl: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
   fonts: {
-    display: 'Cormorant Garamond',
-    body: 'Montserrat',
+    display: "Inter",
+    body: "Inter",
   },
-
-  // ----------------------------------------------------------
-  // INTEGRAÇÕES
-  // ----------------------------------------------------------
-  gtmId: 'GTM-XXXXXXX',
-  webhookUrl: 'https://webhooks02.manager01.growdoc.com.br/webhook/redirect-global',
-  captureUrl: 'https://lswmkiyqznvuedbuyrkt.supabase.co/functions/v1/capture-lead',
-
-  // ----------------------------------------------------------
-  // LOCALIZAÇÃO
-  // ----------------------------------------------------------
-  location: 'CIDADE · UF',
-
-  // ----------------------------------------------------------
-  // HERO
-  // bg-hero.png       → imagem desktop (em public/images/)
-  // bg-hero-mobile.webp → imagem mobile (em public/images/)
-  // ----------------------------------------------------------
+  gtmId: "GTM-XXXXXXX",
+  webhookUrl: "https://webhooks02.manager01.growdoc.com.br/webhook/redirect-global",
+  captureUrl: "https://lswmkiyqznvuedbuyrkt.supabase.co/functions/v1/capture-lead",
+  location: "Online",
   hero: {
-    eyebrow: 'ESPECIALIDADE · CIDADE, UF',
-    // headingLines: cada item vira uma linha do H1. A última entra em itálico dourado.
-    // Não há número mínimo/máximo — use quantas linhas a copy pedir.
-    headingLines: ['LINHA 1', 'LINHA 2', 'palavra em itálico'],
-    credentials: [
-      'Dr. NOME SOBRENOME · CRM XXXXX-XXX | RQE XXXXX',
-    ],
-    formTitle: 'Agende sua consulta',
-    ctaText: 'Ir para o WhatsApp!',
-    // photo: usado pelo HeroSplit — foto do médico sem fundo (recortada ou estúdio)
-    // photo: '/images/dr-nome-hero.webp',
+    eyebrow: "ADRIANA MARTINS - CONSULTORA FINANCEIRA",
+    headingLines: ["Do caos ao lucro previsível em até 90 dias com a ","Mentoria ACTUL"],
+    credentials: ["Para empreendedores com faturamento acima de R$ 30 mil/mês."],
+    formTitle: "[ADRIANA GOMES] Formulário qualificatório LP",
+    ctaText: "QUERO FAZER A APLICAÇÃO",
   },
-
-  // ----------------------------------------------------------
-  // SEÇÃO "DESEJOS"
-  // ----------------------------------------------------------
   desires: {
-    eyebrow: 'Você se identifica?',
-    heading: 'Se você deseja…',
-    items: [
-      { num: '01', text: 'Descrição do desejo 1.' },
-      { num: '02', text: 'Descrição do desejo 2.' },
-      { num: '03', text: 'Descrição do desejo 3.' },
-    ],
-    ctaSubtext: 'O atendimento de [NOME DO MÉDICO] foi feito para você!',
+    eyebrow: "QUER ORGANIZAR SUA EMPRESA E TER LUCRO PREVISÍVEL?",
+    heading: "O primeiro passo começa aqui.",
+    items: [{"num":"✅","text":"Organize suas finanças com clareza, sem achismos nem planilhas soltas."},{"num":"✅","text":"Aprenda a precificar corretamente seus serviços e produtos com margem real."},{"num":"✅","text":"Transforme o faturamento em lucro com base em dados e estratégia."},{"num":"✅","text":"Tire o dono do operacional e crie processos para crescer com segurança."},{"num":"✅","text":"Tenha um plano estruturado para tomar decisões com confiança."}],
+    ctaSubtext: "A solução que você precisa para sair do caos financeiro e transformar seu negócio com um plano claro e sob controle.",
   },
-
-  // ----------------------------------------------------------
-  // SERVIÇOS / PROCEDIMENTOS
-  // ----------------------------------------------------------
   services: {
-    eyebrow: 'Procedimentos',
-    heading: 'HEADLINE DA SEÇÃO DE SERVIÇOS',
-    headingEm: 'palavra em itálico',
-    items: [
-      { num: '01', title: 'SERVIÇO 1', description: 'Descrição do serviço 1.' },
-      { num: '02', title: 'SERVIÇO 2', description: 'Descrição do serviço 2.' },
-      { num: '03', title: 'SERVIÇO 3', description: 'Descrição do serviço 3.' },
-      { num: '04', title: 'SERVIÇO 4', description: 'Descrição do serviço 4.' },
-      { num: '05', title: 'SERVIÇO 5', description: 'Descrição do serviço 5.' },
-      { num: '06', title: 'SERVIÇO 6', description: 'Descrição do serviço 6.' },
-    ],
+    eyebrow: "CONHEÇA O MÉTODO ACTUL",
+    heading: "DO CAOS AO",
+    headingEm: "LUCRO",
+    items: [{"num":"1","title":"ANÁLISE FINANCEIRA","description":"Raio-X do seu negócio, identificação dos vazamentos e plano imediato de ação."},{"num":"2","title":"ANÁLISE FINANCEIRA","description":"Construção da DRE, ponto de equilíbrio e meta de lucro com clareza."},{"num":"3","title":"CRIAÇÃO DE FERRAMENTAS","description":"Precificação com margem, mapa de rentabilidade e reajuste estratégico."},{"num":"4","title":"TOMADA DE DECISÃO COM DADOS","description":"Projeção realista, retirada consciente e rotina semanal de controle."},{"num":"5","title":"UNIFICAÇÃO DA GESTÃO","description":"Integração entre financeiro, operação e equipe com indicadores e plano de ação."},{"num":"6","title":"LUCRO SUSTENTÁVEL","description":"Metas para os próximos 90 dias e plano de crescimento com estrutura."}],
   },
-
-  // ----------------------------------------------------------
-  // DEPOIMENTOS
-  // ----------------------------------------------------------
-  testimonials: [
-    { title: '"Depoimento!"', body: '"Texto do depoimento."', author: 'Nome do Paciente' },
-    { title: '"Outro!"', body: '"Texto do depoimento."', author: 'Nome do Paciente' },
-    { title: '"Mais um!"', body: '"Texto do depoimento."', author: 'Nome do Paciente' },
-    { title: '"E mais!"', body: '"Texto do depoimento."', author: 'Nome do Paciente' },
-    { title: '"Último!"', body: '"Texto do depoimento."', author: 'Nome do Paciente' },
-  ],
-
-  // ----------------------------------------------------------
-  // COMO FUNCIONA / PROCESSO
-  // Componente: ProcessSection — timeline numerada vertical
-  // ----------------------------------------------------------
+  testimonials: [{"title":"\"UM DIVISOR DE ÁGUAS NA MINHA VIDA EMPRESARIAL\"","body":"“Foi maravilhoso... aprendi muito e agora me sinto preparada pra administrar e crescer a minha empresa. Só façam!”","author":"Carina Lemos"},{"title":"\"MUDANÇA QUE VAI TRANSFORMAR MINHA EMPRESA\"","body":"“Sem palavras para agradecer a mudança que vai fazer na minha vida e na minha empresa. Sou muito grata por essa oportunidade 🙏 Adriana, você é d+”","author":"Camila Tavares"},{"title":"\"UMA VIRADA DE CHAVE NUM PISCAR DE OLHOS\"","body":"“Foi incrível. Grandioso esse conhecimento. Tive a certeza que estava trabalhando errado. Mas graças a Deus, foi tudo perfeito. Excelente profissional.”","author":"Nathália Carolina"},{"title":"\"EXCELENTE PROFISSIONAL, COM VISÃO COMPLETA DA EMPRESA\"","body":"“Recomendo bastante. Boa em Gestão Completa Empresarial e realmente procura entender a necessidade da empresa!”","author":"Giovanni Molinari"},{"title":"\"EU ESTAVA FAZENDO TUDO ERRADO — E NEM SABIA\"","body":"“Aprendi muita coisa. Percebi que estava fazendo tudo errado. Obrigada, Adriana, pelo ensinamento.”","author":"Giceli L. Jação"}],
   process: {
-    eyebrow: 'Como Funciona',
-    heading: 'Do primeiro contato ao resultado',
-    headingEm: 'final',
+    eyebrow: "Como Funciona",
+    heading: "Do primeiro contato ao",
+    headingEm: "resultado",
     steps: [
-      { num: '01', title: 'AGENDAMENTO', description: 'Descreva como o paciente agenda e o que acontece antes da consulta.' },
-      { num: '02', title: 'CONSULTA', description: 'Descreva como é a primeira consulta e o que o médico avalia.' },
-      { num: '03', title: 'PROCEDIMENTO', description: 'Descreva como o procedimento é realizado e cuidados envolvidos.' },
-      { num: '04', title: 'RESULTADO', description: 'Descreva o resultado esperado e o acompanhamento pós-procedimento.' },
+      { num: "01", title: "AGENDAMENTO", description: "Entre em contato e agende sua consulta." },
+      { num: "02", title: "CONSULTA", description: "Avaliação detalhada e planejamento do tratamento." },
+      { num: "03", title: "PROCEDIMENTO", description: "Realização com técnica e segurança." },
+      { num: "04", title: "RESULTADO", description: "Acompanhamento e resultado esperado." },
     ],
   },
-
-  // ----------------------------------------------------------
-  // ANTES E DEPOIS
-  // Componente: BeforeAfterSection — grid de cards lado a lado
-  // disclaimer: texto de rodapé legal (opcional, mas recomendado)
-  // ----------------------------------------------------------
   beforeAfter: {
-    eyebrow: 'Resultados Reais',
-    heading: 'Transformações que',
-    headingEm: 'falam por si',
-    disclaimer: 'Resultados podem variar de acordo com cada organismo. Imagens de casos reais de pacientes que autorizaram o uso.',
-    items: [
-      { label: 'CASO 01 — DESCRIÇÃO', beforeSrc: '/images/antes-01.webp', afterSrc: '/images/depois-01.webp' },
-      { label: 'CASO 02 — DESCRIÇÃO', beforeSrc: '/images/antes-02.webp', afterSrc: '/images/depois-02.webp' },
-      { label: 'CASO 03 — DESCRIÇÃO', beforeSrc: '/images/antes-03.webp', afterSrc: '/images/depois-03.webp' },
-    ],
+    eyebrow: "Resultados Reais",
+    heading: "Transformações que",
+    headingEm: "falam por si",
+    disclaimer: "Resultados podem variar. Imagens de pacientes que autorizaram o uso.",
+    items: [] as { label: string; beforeSrc: string; afterSrc: string }[],
   },
-
-  // ----------------------------------------------------------
-  // FAQ — Perguntas Frequentes
-  // Componente: FaqSection — accordion com <details>/<summary> (zero JS)
-  // ----------------------------------------------------------
   faq: {
-    eyebrow: 'Dúvidas Frequentes',
-    heading: 'Perguntas que os pacientes mais fazem',
-    items: [
-      { question: 'PERGUNTA 1?', answer: 'Resposta completa e detalhada para a pergunta 1.' },
-      { question: 'PERGUNTA 2?', answer: 'Resposta completa e detalhada para a pergunta 2.' },
-      { question: 'PERGUNTA 3?', answer: 'Resposta completa e detalhada para a pergunta 3.' },
-      { question: 'PERGUNTA 4?', answer: 'Resposta completa e detalhada para a pergunta 4.' },
-      { question: 'PERGUNTA 5?', answer: 'Resposta completa e detalhada para a pergunta 5.' },
-    ],
+    eyebrow: "Dúvidas Frequentes",
+    heading: "Perguntas que os pacientes mais fazem",
+    items: [] as { question: string; answer: string }[],
   },
-
-  // ----------------------------------------------------------
-  // MAPA / LOCALIZAÇÃO
-  // Componente: MapSection — info de endereço + iframe do Google Maps
-  // mapsEmbed: URL de incorporação do Maps (Compartilhar → Incorporar)
-  // mapsUrl: URL normal do Maps para abrir no app
-  // ----------------------------------------------------------
   mapSection: {
-    eyebrow: 'Localização',
-    heading: 'Venha nos conhecer',
-    address: 'Rua, Número — Bairro, Cidade/UF',
-    complement: 'Referência de localização ou complemento',
-    schedule: 'Seg–Sex: 8h–18h | Sáb: 8h–12h',
-    phone: '(00) 0 0000-0000',
-    mapsUrl: 'https://maps.google.com/?q=endereço',
-    mapsEmbed: 'https://www.google.com/maps/embed?pb=COLE_AQUI',
+    eyebrow: "Localização",
+    heading: "Venha nos conhecer",
+    address: "",
+    complement: "",
+    schedule: "Atendimento online com agendamento prévio.",
+    phone: "",
+    mapsUrl: "https://maps.google.com",
+    mapsEmbed: "https://www.google.com/maps/embed?pb=",
   },
-
-  // ----------------------------------------------------------
-  // SEÇÃO CLÍNICA / LOCALIZAÇÃO
-  // Componente: ClinicaSection — info da clínica + carrossel de fotos
-  // stats: até 4 diferenciais rápidos (value + label) — opcional
-  // ----------------------------------------------------------
   locationSection: {
-    eyebrow: 'Nossa Estrutura',
-    heading: 'Conheça o NOME DA CLÍNICA',
-    locations: [
-      {
-        city: 'CIDADE, UF',
-        name: 'NOME DA CLÍNICA',
-        address: 'Rua, Número — Bairro, Cidade/UF',
-        description: 'Descrição do espaço físico, ambiente e proposta da clínica.',
-      },
-    ],
-    stats: [
-      { value: 'DIFERENCIAL 1', label: 'Descrição curta do diferencial' },
-      { value: 'DIFERENCIAL 2', label: 'Descrição curta do diferencial' },
-      { value: 'DIFERENCIAL 3', label: 'Descrição curta do diferencial' },
-      { value: 'DIFERENCIAL 4', label: 'Descrição curta do diferencial' },
-    ],
+    eyebrow: "Nossa Estrutura",
+    heading: "Conheça o ADRIANA MARTINS - CONSULTORA FINANCEIRA",
+    locations: [{ city: "Online", name: "ADRIANA MARTINS - CONSULTORA FINANCEIRA", address: "Atendimento online", description: "Consultoria financeira especializada para empreendedores, totalmente online." }],
+    stats: [] as { value: string; label: string }[],
   },
-
-  // ----------------------------------------------------------
-  // GALERIA
-  // ----------------------------------------------------------
   gallery: {
-    eyebrow: 'Estrutura',
-    heading: 'Conheça o NOME DA CLÍNICA',
-    description: 'Descrição da estrutura da clínica, ambiente e diferenciais.',
-    images: [
-      { src: '/images/gallery-1.webp', alt: 'Descrição 1' },
-      { src: '/images/gallery-2.webp', alt: 'Descrição 2' },
-      { src: '/images/gallery-3.webp', alt: 'Descrição 3' },
-      { src: '/images/gallery-4.webp', alt: 'Descrição 4' },
-      { src: '/images/gallery-5.webp', alt: 'Descrição 5' },
-      { src: '/images/gallery-6.webp', alt: 'Descrição 6' },
-      { src: '/images/gallery-7.webp', alt: 'Descrição 7' },
-      { src: '/images/gallery-8.webp', alt: 'Descrição 8' },
-    ],
+    eyebrow: "Estrutura",
+    heading: "Conheça o ADRIANA MARTINS - CONSULTORA FINANCEIRA",
+    description: "",
+    images: [] as { src: string; alt: string }[],
   },
-
-  // ----------------------------------------------------------
-  // MÉDICOS
-  // bio: parágrafos de apresentação do médico (opcional, mas recomendado)
-  // ----------------------------------------------------------
   doctors: [
     {
-      crm: 'CRM XXXXX-XXX | RQE XXXXX',
-      name: 'Dr. NOME SOBRENOME',
-      specialty: 'Especialidade e título do médico.',
-      bio: [
-        'Parágrafo 1 de apresentação do médico — formação, missão ou proposta de valor.',
-        'Parágrafo 2 — abordagem clínica, técnicas ou diferenciais.',
-        'Parágrafo 3 — compromisso com o paciente e resultados esperados.',
-      ],
-      credentials: [
-        'Graduado em medicina pela UNIVERSIDADE',
-        'Residência em ESPECIALIDADE pelo HOSPITAL',
-        'Membro de SOCIEDADE',
-      ],
-      photo: '/images/dr-nome.webp',
+      crm: "",
+      name: "Adriana Martins",
+      specialty: "Consultora Financeira",
+      bio: ["Adriana Martins é uma consultora financeira experiente, especializada em ajudar empreendedores a organizar suas finanças e alcançar um lucro previsível. Com a Mentoria ACTUL, ela guia empresas com faturamento acima de R$ 30 mil/mês rumo à estabilidade e crescimento financeiro."],
+      credentials: ["Para empreendedores com faturamento acima de R$ 30 mil/mês."],
+      photo: "https://f58ee20228d9ca2cf6ae548dbcf2204b.r2.cloudflarestorage.com/creative-post-storage/projects/prj_adriana-consultora/assets/photo-professional.jpg?X-Amz-Expires=3600&X-Amz-Date=20260430T182745Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=b934f0556c87eb9d9e2b56da7aeeed98%2F20260430%2Fauto%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=572ccd040d827ba5be320ab6c147c4017b3552b61a32e66eff83947716f08438",
     },
   ],
-
-  // ----------------------------------------------------------
-  // LINKS ÚTEIS — subpágina em /links-uteis/
-  // Cada item vira um botão na página de link-in-bio.
-  // Deixe items vazio se não for usar.
-  // ----------------------------------------------------------
-  linksUteis: {
-    items: [
-      // { label: 'Instagram', href: 'https://instagram.com/clinica' },
-      // { label: 'Agendar consulta', href: 'https://doctoralia.com.br/...' },
-      // { label: 'Site', href: 'https://clinica.com.br' },
-    ] as { label: string; href: string }[],
-  },
-
-  // ----------------------------------------------------------
-  // FOOTER
-  // ----------------------------------------------------------
+  linksUteis: { items: [] as { label: string; href: string }[] },
   footer: {
     year: new Date().getFullYear(),
-    copyright: 'Dr. NOME SOBRENOME · Todos os direitos reservados',
+    copyright: "Adriana Martins - Consultora Financeira · Todos os direitos reservados",
   },
-  // ──────────────────────────────────────────────────────────────
-  // OPCIONAL: HeroSlider — ativo quando definido, substitui HeroSection estático
-  // Cada slide tem: image (caminho em /images/), headingLines[], ctaText
-  // Exemplo:
-  // heroSlides: [
-  //   { image: '/images/slide-1.jpg', headingLines: ['Rinoplastia', 'Natural'], ctaText: 'Agendar' },
-  //   { image: '/images/slide-2.jpg', headingLines: ['Resultado', 'Definitivo'], ctaText: 'Agendar' },
-  // ],
-  // ──────────────────────────────────────────────────────────────
 } as const
